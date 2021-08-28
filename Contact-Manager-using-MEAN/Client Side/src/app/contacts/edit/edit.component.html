@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+<div class="container mt-4">
+    <form #editForm="ngForm" (ngSubmit)="onSubmitContact()">
+        <div class="card mt-4 shadow">
+            <div class="card-header bg-primary text-white">
+                <h2>Edit Contact</h2>
+            </div>
+            <div class="card-body">
+                <div [class]="isError? 'alert alert-danger':'d-none'" class="my-4">{{ message }}</div>
+                <div [class]="isSuccess? 'alert alert-success':'d-none'" class="my-4">{{ message }}</div>
+                <div class="form-group mt-4">
+                    <input type="text" class="form-control" name="cname" placeholder="contact name" [(ngModel)]="contact.cname"/>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="text" class="form-control" name="cemail" placeholder="contact email" [(ngModel)]="contact.cemail"/>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="text" class="form-control" name="cphone" placeholder="contact phone" [(ngModel)]="contact.cphone"/>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="text" class="form-control" name="ctype" placeholder="contact type" [(ngModel)]="contact.ctype"/>
+                </div>
+                <div class="form-group text-end mt-4">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+<div class="box">
+    <app-nav></app-nav>
+    <div class="container mt-4 mb-5">
+        <div class="px-5">
+            <input type="button" value="Add Contacts" routerLink="/contacts/add" class="btn btn-info">
+        </div>
+        <div class="row mt-4 px-4">
+            <div class="col-12">
+                <div class="card shadow mt-4" *ngFor="let contact of contactsData;let idx=index">
+                    <div class="card-header bg-primary text-white">
+                        <h3>{{contact.contactname}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col text-dark">
+                                <div> Contact Email: {{contact.contactemail}}</div>
+                                <div> Contact Number: {{contact.contactphone}}</div>
+                                <div>Contact Type: {{contact.contacttype}}</div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-end">
+                            <a routerLink="/contact/edit/{{ contact._id }}" class="btn btn-warning">Edit</a> &nbsp; &nbsp;
+                            <input type= "button" (click) = "deleteContact(contact._id)" value = "Delete" class = "btn btn-danger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

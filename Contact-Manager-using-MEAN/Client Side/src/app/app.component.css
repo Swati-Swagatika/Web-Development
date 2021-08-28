@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.box{
+    font-family: 'Bree Serif', serif;
+    background-image: url('./home2.jpg');
+    height: 100vh;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
