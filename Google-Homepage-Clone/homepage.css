@@ -1,0 +1,47 @@
+#nav_bar{
+    float: right;
+}
+#nav_bar li{
+    display: inline-block;
+    padding: 6px;
+}
+a{
+    text-decoration: none;
+    /* color: inherit; */
+}
+li a:hover{
+    text-decoration: underline;
+}
+#mic{
+    flex: 1;
+    padding: 3px;
+}
+#inpt{
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    height: 34px;
+}
+.form-rounded {
+    border-radius: 2rem;
+    width: auto;
+    max-width: 584px;
+}
+.form-rounded .mic{
+    float: right;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+#f1 li, #f2 li{
+    display: inline-block;
+}
+#f1 a, #f2 a{
+    color: gray;
+}
+#f2 li{
+    float: right;
+}
