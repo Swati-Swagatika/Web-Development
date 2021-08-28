@@ -1,0 +1,15 @@
+<div class ="container">
+    <!-- <h4 *ngIf="taskmanager.length==0">No tasks found</h4> -->
+    <div class="row mt-2 pt-4">
+        <div class="col">
+            <app-taskform (addtasks)="addtasks($event)"></app-taskform>
+        </div>
+        <div class="col">
+            <div class="card-header bg-info">
+                <h4 class="text-center">Lists of Tasks</h4>
+            </div>
+            <h4 *ngIf="taskmanager.length==0" class="bg-white">No tasks found</h4>
+            <app-task [userdata]="task" *ngFor="let task of taskmanager;"></app-task> 
+        </div>
+    </div>
+</div>

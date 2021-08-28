@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+#box{
+    height: 625px;
+    overflow: hidden;
+    background-image: url(./bgimg.jpg);
+    background-size: 100%;
+    background-size: cover;
+    font-family: 'DM Serif Display', serif;
+}
