@@ -1,0 +1,14 @@
+body {
+    overflow-x: hidden;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    font-family: cursive;
+}
+.top{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 10px 5px rgb(146, 140, 140);
+}
+.custom{
+    box-shadow: 5px 10px 18px rgb(27, 27, 27);
+}
